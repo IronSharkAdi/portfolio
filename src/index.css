@@ -1,0 +1,22 @@
+.portfolio_bar {
+  display: flex;
+  justify-content: space-around;
+  width: 100vh;
+  font-size: 30px;
+  padding: 20px;
+}
+.portfolio_bar > div {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .portfolio_bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.projectName {
+  text-align: center;
+  margin-top: 10px;
+}

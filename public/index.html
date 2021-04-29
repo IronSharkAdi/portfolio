@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+      <meta name="description" content="Full Stack developer site">
+    <meta name="keywords" content="web design , web development , web server , web app , website developer , native app builder , native app , android app developer , ios app developer , freelancer , freelancer web developer , app developer , react developer , react.js developer , remote web developer , software development , software developer , responsive web developer ">
+    <meta name="author" content="Iron Shark Adi">
+    <meta
+      name="description"
+      content="Portfolio Website of Adi"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Adi</title>
+  </head>
+  <body>
+    
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+   
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+
+    <link rel="shortcut icon" href="img/logo2.png">
+        <style>
+
+          @media only screen and (max-width: 600px) {
+            .resize-text {font-size: 17px; }
+            .start{
+            font-size: 15px !important;
+          }
+          #services{
+            margin-top:-80px !important;
+          }
+          }
+          @media only screen and (min-width: 600px) {
+            .resize-text  {font-size: 18px; }
+            .start{
+            font-size: 18px !important;
+          }
+          
+          #services{
+            margin-top:-80px !important;
+          }
+          }
+          @media only screen and (min-width: 768px) {
+            .resize-text {font-size: 26px; }
+            .start{
+            font-size: 22px !important;
+          }
+          #services{
+            margin-top:-150px !important;
+          }
+          } 
+          @media only screen and (min-width: 992px) {
+            .resize-text { font-size: 32px; }
+            .start{
+            font-size: 25px !important;
+          }
+          #services{
+            margin-top:-150px !important;
+          }
+          } 
+          @media only screen and (min-width: 760px){
+            #services{
+            margin-top:-180px !important;
+          }
+          }
+          /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+          *{
+            font-family: 'Montserrat', sans-serif !important;
+          } */
+          /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+          *{
+            font-family: 'Open Sans', sans-serif;
+          } */
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&display=swap');        
+          *{
+            font-family: 'Poppins', sans-serif;
+          } 
+/* 
+          #services{
+            margin-top:-150px ;
+          } */
+          .gmiddle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+          }
+
+          .gcontainer:hover .gimage {
+            opacity: 0.3;
+          }
+
+          .gcontainer:hover .gmiddle {
+              opacity: 1;
+          }
+
+.gtext {
+  background-color: #000000;
+  opacity: 0.6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+  </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVJP5362B4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VVJP5362B4');
+  </script>
+
+  </head>
+  <body> 
+    <section id="intro" style="background-image: url('img/bg.jpg');" class="intro">       
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row" style="margin:10px;">
+            <div class="col-lg-11 col-md-12 mx-auto" style="  margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            ">
+              <p class="italic start text-dark" style="padding-top: 5%; padding-left: 3%;">Oh, hello, nice to meet you! I am Adi</p>
+              <h1 class="text-dark resize-text" style="padding-left: 3%;" >I am a <span class="animate"></span></h1>
+              <p class="start text-dark" style="padding-left: 3%; padding-bottom: 5%;">I strive to make my creation a better innovation with every line of code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="root"></div>
+
+    <footer style="background-color: #111;">
+      <div class="container"> 
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="mb-md-0 text-center text-md-left">&copy;2020 Iron Shark Adi</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="https://www.jqueryscript.net/demo/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud/jquery.svg3dtagcloud.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" ></script>
+    <script src="js/front.js"></script>
+    <script>
+
+    windowSize = $(window).width();
+    console.log(windowSize);
+    if(windowSize > 720){
+      var h = 500
+      var w = 650
+    } else if( windowSize < 720){
+      h = 450
+      w = 550
+    } else if(windowSize < 600){
+      h = 400
+      w = 500
+    }else if( windowSize < 480){
+      h = 250
+      h = 300
+    }
+      $(document).ready(function(){
+        var entries=[
+          { label : 'Html5' , url:'/'},
+          { label : 'Css3' , url:'/'},
+          { label : 'Javascript' , url:'/'},
+          { label : 'Jquery' , url:'/'},
+          { label : 'Python' , url:'/'},
+          { label : 'React Native' , url:'/'},
+          { label : 'Django' , url:'/'},
+          { label : 'Flask' , url:'/'},
+          { label : 'Express.js' , url:'/'},
+          { label : 'React.js' , url:'/'},
+          { label : 'C++' , url:'/'},
+          { label : 'Json' , url:'/'},
+          { label : 'Node.js' , url:'/'},
+          { label : 'Bootstrap' , url:'/'},
+          { label : 'MongoDB' , url:'/'},
+          { label : 'Mysql' , url:'/'},
+          { label : 'Firebase' , url:'/'},
+          { label : 'Discord js' , url:'/'},
+          { label : 'C' , url:'/'},
+          { label : 'C++' , url:'/'},
+          { label : 'Rest Api' , url:'/'},
+          { label : 'Material Ui' , url:'/'},
+          { label : 'Redux' , url:'/'},
+          { label : 'Stripe' , url:'/'},
+        ]
+        var settings= {
+          entries :entries,
+          width : w ,
+          height : h ,
+          radius :'65%',
+          radiusMin :75 ,
+          bgDraw : true ,
+          bgColor : '#eeeeee',
+          opacityOver : 1.00 ,
+          opacityOut : 0.03 ,
+          opacitySpeed : 5 ,
+          fov :800 , 
+          speed :0.5,
+          fontSize :'30',
+          fontColor:'#000000',
+          fontWeight:'bold',
+          fontStyle : 'normal',
+          fontToUpparcase:true,
+        };
+        $('#circle').svg3DTagCloud(settings);
+      });
+      var typed = new Typed('.animate' , {
+        strings:[
+          'Full-Stack developer ^1000',
+          'Native app developer ^1000',
+        ],
+        typeSpeed:40,
+        backSpeed:40,
+        loop:true,
+      }) 
+    </script>
+    
+  </body>
+</html>
+  
